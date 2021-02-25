@@ -1,0 +1,38 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Monument Extended", sans-serif;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.col-lg-6 {
+    padding: 3% 10%;
+}
+
+.form-control {
+    margin: 8% 0 0 0;
+}
+
+.btn-primary {
+    margin: 20% 0;
+}
+
+.info {
+    padding: 0 0 7% 0;
+}
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url(fonts/MonumentExtended-Regular.otf);
+    font-style: normal;
+}

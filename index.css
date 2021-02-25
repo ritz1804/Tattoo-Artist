@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    cursor: none;
+    font-family: "Monument Extended", sans-serif;
+    color: white;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("img/bg.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.nav-wrapper {
+    width: 100%;
+    height: 20vh;
+    padding: 3% 0;
+}
+
+.name {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 15vh 0 0 0;
+}
+
+h1 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.hover-this {
+    transition: all 0.3s ease;
+}
+
+span {
+    display: inline-block;
+    font-family: "Monument Extended";
+    font-weight: 300;
+    color: #fff;
+    font-size: 36px;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: transform 0.1s linear;
+}
+
+.cursor {
+    pointer-events: none;
+    position: fixed;
+    padding: 0.3rem;
+    background-color: #fff;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+}
+
+.hover-this:hover ~ .cursor {
+    transform: translate(-50%, -50%) scale(8);
+}
+
+@media(min-width: 900px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 900px) {
+    nav {
+        top: 5%;
+    }
+
+    .hover-this {
+        width: 100%;
+        padding: 10px 0;
+        display: inline-block;
+    }
+}
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url(fonts/MonumentExtended-Regular.otf);
+    font-style: normal;
+}

@@ -1,0 +1,103 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1200px !important;
+    background: #161616;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0 5%;
+    overflow-x: hidden;
+}
+
+.content {
+    width: 100%;
+    margin: 10% 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Monument Extended";
+    font-size: 8vw;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    padding: 10px 0;
+    margin-bottom: 16px;
+}
+
+.text {
+    color: transparent;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.text.reveal {
+    color: #fff;
+    animation: revealTextAnimation 0.64s ease forwards;
+}
+
+.text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text.reveal:before {
+    background: #6c2e13;
+    animation: blockRevealAnimation 0.8s ease forwards;
+}
+
+a>div { display: none; }
+a:hover>div { display: block; }
+
+@keyframes blockRevealAnimation {
+    0% {
+        left: -100%;
+    }
+    40% {
+        left: 0;
+    }
+    60% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+@keyframes revealTextAnimation {
+    0% {
+        color: transparent;
+    }
+    40% {
+        color: transparent;
+    }
+    60% {
+        color: #333;
+    }
+}
+
+@media (max-width: 990px) {
+    .content {
+        width: 100%;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url(fonts/MonumentExtended-Regular.otf);
+    font-style: normal;
+}
