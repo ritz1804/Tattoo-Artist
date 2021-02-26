@@ -39,7 +39,7 @@ h1 {
 
 .text.reveal {
     color: #fff;
-    animation: revealTextAnimation 0.64s ease forwards;
+    animation: revealTextAnimation 0.9s ease forwards;
 }
 
 .text:before {
@@ -51,8 +51,8 @@ h1 {
 }
 
 .text.reveal:before {
-    background: #6c2e13;
-    animation: blockRevealAnimation 0.8s ease forwards;
+    background: #161616;
+    animation: blockRevealAnimation 0.9s ease forwards;
 }
 
 a>div { display: none; }
