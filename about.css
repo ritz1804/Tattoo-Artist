@@ -29,10 +29,27 @@ h1 {
     margin-bottom: 16px;
 }
 
+p {
+    display: inline;
+    color: white;
+    font-family: "Monument Extended";
+    font-size: 8vw;
+    -webkit-text-fill-color: #161616; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+    margin: 0;
+}
+
 .text {
     color: transparent;
     display: inline-block;
     position: relative;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+p {
+    color: transparent;
     overflow: hidden;
     transition: 0.8s;
 }
@@ -50,7 +67,20 @@ h1 {
     height: 100%;
 }
 
+p:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .text.reveal:before {
+    background: #161616;
+    animation: blockRevealAnimation 0.9s ease forwards;
+}
+
+p.reveal:before {
     background: #161616;
     animation: blockRevealAnimation 0.9s ease forwards;
 }
