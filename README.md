@@ -7,8 +7,7 @@
 </p>
 
 <p align="center">
-  ##  Live
-  Checkout the website [Live](https://ritz1804.github.io/Tattoo-Artist/)
+  The website is live at: (https://ritz1804.github.io/Tattoo-Artist/)
 </p>
 
 <p align="center">
